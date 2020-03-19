@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 
 
-const Curso = ({title, image, price}) => (
+const Curso = ({title, image, price, profesor}) => (
   
     <article className="card">
       
@@ -14,6 +14,9 @@ const Curso = ({title, image, price}) => (
         <h3 className="t5 s-mb-2 s-center">
             {title}
         </h3>
+        <h4 className="t5 s-mb-2 s-center">
+          {profesor}
+        </h4>
         
         <div className="s-main-center">
             <a className="button--ghost-alert button--tiny" href="http://">{`$ ${price} USD`}</a>
